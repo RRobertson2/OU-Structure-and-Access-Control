@@ -177,5 +177,73 @@ In the permissions configuration window:
 
 <hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
 
+### Step 11: Grant Group Access
+
+In Advanced Security Settings, clicked Add a Permission Entry, selected EngineeringShare group, granted Write permissions, and completed the configuration.<br>
+<br>
+- Assigned permissions to the group
+- Provides proper write access to authorized users
+- Used Advanced > Add > Select Principal > Grant Write > Confirm<br>
+<br>
+<img src="https://github.com/user-attachments/assets/0bb77ed3-4d27-4dbc-8fac-7d9126d0b373" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/b6149c10-0bc0-4820-83b3-a868ba7f9b70" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/85b8950b-4cfb-4ddb-9dd2-5c1157e0c977" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/c60198a1-f840-4d46-b74b-e9775da58424" width="1000"><br>
+<br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+
+
+### Step 12: Access Share from Windows 11 VM
+
+Signed in as Happy Gilmore, opened File Explorer, and navigated to \\DC01\EngineeringShare. Created a test document named "for Engineering New Specs July 2025".<br>
+<br>
+- Validated access to shared folder
+- Confirms that the permission settings work
+- Logged in and manually accessed share via UNC path<br>
+<br>
+<img src="https://github.com/user-attachments/assets/83e43883-8ae8-4641-90d0-c73db45662cc" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/66000529-1e39-431c-93a1-e8c918f10ba0" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/97a2f0af-5143-4739-b3d8-7ecaa093071a" width="1000"><br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+
+### Step 13: Map Network Drive
+
+Mapped the network share as a persistent drive:<br>
+<br>
+- Right-clicked This PC > Map Network Drive
+- Chose unused letter
+- Entered \\DC01\EngineeringShare<br>
+<br>
+- Created a mapped drive
+- Simplifies user access to shared folders
+- Used Windows Explorer > Map Network Drive wizard<br>
+<br>
+<img src="https://github.com/user-attachments/assets/a20e0f66-29cf-4fec-99d5-6c74a736a724" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/0cef6aea-a894-47f2-8058-a98936cf1a47" width="1000"><br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+### Step 14: Verify Mapped Drive Exists
+
+Verified that EngineeringShare now appears under This PC. Users can now access the share like a local drive.<br>
+<br>
+- Confirmed mapped drive
+- Ensures ease of use for end users
+- Viewed drive listed in File Explorer<br>
+<br>
+<img src="https://github.com/user-attachments/assets/3014118e-a1b7-4d33-a07e-501a976c7b73" width="1000"><br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
 
 
