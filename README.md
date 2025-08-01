@@ -66,7 +66,7 @@ Administrator moved to IT
 <img src="https://github.com/user-attachments/assets/b12d5cb1-3dc6-42af-8266-274acf2a86df" width="1000"><br>
 <br>
 <img src="https://github.com/user-attachments/assets/3d60dbf7-8249-40eb-a28e-12c54ecd9837" width="1000"><br>
-
+<br>
 <hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
 
 ### Step 4: Create Sub-OU for Administration
@@ -79,6 +79,101 @@ Created a nested OU called Administration within the IT OU for better role separ
 <img src="https://github.com/user-attachments/assets/b3485bd7-a288-41d2-a045-a63bc0eeea68" width="1000"><br>
 <br>
 <img src="https://github.com/user-attachments/assets/aed966d2-a8bf-477a-ba91-e505b6a201ff" width="1000"><br>
+<br>
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+### Step 5: Create Security Group in Engineering OU
+Created a new Security Group named EngineeringShare within the Engineering OU. Chose group type as Security, which is used for assigning permissions. (Distribution groups are only for email distribution lists.)<br>
+<br>
+- Created a security group for resource access
+- Allows centralized management of folder permissions
+- Right-clicked Engineering OU > New > Group > Selected "Security"<br>
+<br>
+<img src="https://github.com/user-attachments/assets/765af03f-f2fa-41e9-a5b6-6d74433e4e9f" width="1000"><br>
+<br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+### Step 6: Add Members to Security Group
+Opened EngineeringShare group properties. Under the Members tab, added Happy and Peter—users already in the Engineering OU.<br>
+<br>
+- Populated group with Engineering users
+- Enables these users to inherit permissions from the group
+- Double-clicked group > Members tab > Add users<br>
+<br>
+<img src="https://github.com/user-attachments/assets/79cd318d-3f51-4e67-b8f4-78e8ad3bb112" width="1000"><br>
+<br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+### Step 7: Cross-OU Group Access
+Added Bruce from the Management OU to the EngineeringShare group to reflect cross-department access needs. Cross-OU membership is allowed in Active Directory and helps support collaborative workflows.<br>
+<br>
+- Added user from another OU to an Engineering group
+- Enables access without changing OU structure
+- Added Bruce through the same group membership window<br>
+<br>
+<img src="https://github.com/user-attachments/assets/693b67ed-ab27-47a2-adb6-0c8d863baa74" width="1000"><br>
+<br>
+<br>
+<img src="https://github.com/user-attachments/assets/a308cfe3-8e68-499c-a217-454e8f2971e4" width="1000"><br>
+<br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+### Step 8: Initiate Shared Folder Setup
+
+Opened File and Storage Services > Shares in Server Manager. Chose Tasks > New Share to begin shared folder configuration.<br>
+<br>
+- Began setting up a new file share
+- Shared folders allow group-based access to central files
+- Navigated to Shares > Tasks > New Share<br>
+<br>
+<img src="https://github.com/user-attachments/assets/0cc15bd2-1eaf-463f-be40-7e06ea455e4a" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/5223e40e-4c3d-47fe-a312-0aed96d9a45e" width="1000"><br>
+<br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+### Step 9: Configure Share Name and Path
+
+In the New Share Wizard: Chose SMB Quick Profile<br>
+- Named folder EngineeringShare<br>
+- Set path to C:\Shares\EngineeringShare and network path to \\DC01\EngineeringShare<br>
+- Accepted default caching setting<br>
+<br>
+- Set up folder path and name
+- Configures the actual share for engineering use
+- Followed SMB share creation steps in wizard<br>
+<br>
+<img src="https://github.com/user-attachments/assets/866350a8-3701-4e25-bd22-4d3395c6eac1" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/fc45fce9-042c-466c-87ed-c901e26eb838" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/486194c7-0e1d-42f8-88c1-cb59b453fa56" width="1000"><br>
+<br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+### Step 10: Customize Folder Permissions
+
+In the permissions configuration window:
+
+- Disabled inheritance
+- Converted inherited permissions to explicit
+- Removed default "Everyone" group to restrict access<br>
+<br>
+- Restricted access to shared folder
+- Ensures only group members can access EngineeringShare
+- Disabled inheritance > Converted permissions > Removed "Everyone"<br>
+<br>
+<img src="https://github.com/user-attachments/assets/5ba244b4-4869-4dba-b3a4-5e15bc31f031" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/59da9012-ef3e-4b1a-af93-204ecee198bc" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/467b32db-b234-4150-8b50-97ab53f9c2c5" width="1000"><br>
+<br>
 
 <hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
 
