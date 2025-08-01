@@ -162,7 +162,7 @@ In the permissions configuration window:
 
 - Disabled inheritance
 - Converted inherited permissions to explicit
-- Removed default "Everyone" group to restrict access<br>
+- Removed default "Everyone" users group to restrict access<br>
 <br>
 - Restricted access to shared folder
 - Ensures only group members can access EngineeringShare
@@ -245,5 +245,16 @@ Verified that EngineeringShare now appears under This PC. Users can now access t
 
 <hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
 
+### Step 15: Test Access Restriction with Different User
+
+Signed out Happy Gilmore, signed in as Bucky Barnes (who is not a member of EngineeringShare group). Attempted to access \\DC01\EngineeringShare, received "Access Denied" message.<br>
+<br>
+- Tested access for a restricted user
+- Validates permissions are enforced correctly
+- Switched user and attempted folder access<br>
+<br>
+<img src="https://github.com/user-attachments/assets/47df543f-b31e-48b4-a382-842a4c69b407" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/0d2ec70c-9b72-42c0-88ec-10922d480591" width="1000"><br>
 
 
