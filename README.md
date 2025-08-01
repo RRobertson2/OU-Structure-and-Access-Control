@@ -35,3 +35,17 @@ Launched Active Directory Users and Computers from the Server Manager > Tools me
 
 <hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
 
+### Step 2: Create Departmental OUs
+
+Following best practices, created dedicated Organizational Units for each department. Right-clicked on the root domain DOOM.local and selected New > Organizational Unit. Created three new OUs: Engineering, Management, and IT.<br>
+<br>
+- Created new OUs for departmental structure
+- Logical OU structure enables streamlined administration and group policies
+- Right-clicked domain > New > Organizational Unit<br>
+
+<img src="
+  " width="1000"><br>
+<br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
