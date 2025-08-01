@@ -43,9 +43,44 @@ Following best practices, created dedicated Organizational Units for each depart
 - Logical OU structure enables streamlined administration and group policies
 - Right-clicked domain > New > Organizational Unit<br>
 
-<img src="
-  " width="1000"><br>
+<img src="https://github.com/user-attachments/assets/96f47e8b-c167-46e8-80e6-39839410c9e1" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/d0e9cc22-c68d-4955-afb5-6f2723f6a90e" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/f16632f6-a6ea-49de-890d-bab2da735278" width="1000"><br>
 <br>
 
 <hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+### Step 3: Move Users into Relevant OUs
+Reorganized user accounts by moving them into their respective OUs:<br>
+<br>
+Happy and Peter moved to Engineering<br>
+Bruce and Bucky moved to Management<br>
+Administrator moved to IT
+
+- Organized users by department
+- Supports department-specific policy and permission management
+- Dragged and dropped users into corresponding OU folders<br>
+
+<img src="https://github.com/user-attachments/assets/b12d5cb1-3dc6-42af-8266-274acf2a86df" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/3d60dbf7-8249-40eb-a28e-12c54ecd9837" width="1000"><br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+### Step 4: Create Sub-OU for Administration
+Created a nested OU called Administration within the IT OU for better role separation. Moved the Administrator account into the Administration OU.<br>
+<br>
+- Added a sub-OU within IT for administrative accounts
+- Isolates sensitive accounts for targeted security settings
+- Right-clicked IT OU > New > Organizational Unit > Named "Administration"<br>
+
+<img src="https://github.com/user-attachments/assets/b3485bd7-a288-41d2-a045-a63bc0eeea68" width="1000"><br>
+<br>
+<img src="https://github.com/user-attachments/assets/aed966d2-a8bf-477a-ba91-e505b6a201ff" width="1000"><br>
+
+<hr style="border: 0.15px solid rgba(0, 0, 0, 0.05);">
+
+
 
